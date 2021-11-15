@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "name": "Han",
+      "state": "Look, kid...",
+      "description": "I've got enough on my plate as it is, and I...",
+      "image": "avatar-han.png"
+    },
+    {
+      "name": "Finn",
+      "state": "I'm a big deal",
+      "description": "Listen, I've had a pretty messed up day...",
+      "image": "avatar-finn.png"
+    },
+    {
+      "name": "Leia",
+      "state": "You're My Only Hope",
+      "description": "I've placed information vital to the survival...",
+      "image": "avatar-leia.png"
+    },
+    {
+      "name": "Luke",
+      "state": "You're My Only Hope",
+      "description": "I've placed information vital to the survival...",
+      "image": "avatar-luke.png"
+    }
+  ]
+}

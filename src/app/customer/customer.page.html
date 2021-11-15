@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>Clientes</ion-title>
+  </ion-toolbar>
+  <!--Vamos a poner un buscador para nuestra app-->
+  <ion-toolbar color="mycolor">
+    <ion-searchbar placeholder="Buscar" animated (ionChange)="searchCustomer($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!--Funcionalidad del refresh, cuando le damos al scroll vaya
+      creando nuevos usarios si existiesen-->
+
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content refreshingSpinner="bubbles">
+      </ion-refresher-content>
+    </ion-refresher>
+
+
+
+  <ion-list *ngIf = "permisson">
+    <ion-item  *ngFor="let user of searchedUser">
+      <ion-avatar slot="start">
+        <img src="../../assets/customer-img/{{user.image}}">
+      </ion-avatar>
+      <ion-avatar slot="end">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2 class="colorBlue">{{user.name}}</h2>
+        <h3>{{user.state}}</h3>
+        <p>{{user.description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-label *ngIf="!permisson">No tienes permiso de usuario</ion-label>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>Ciudades</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row>
+    <ion-col *ngFor="let city of cities" sizeLg="6" sizeMd="6" sizeXs="12">
+      <!--Estamos enrutando las card por el id-->
+      <ion-card [routerLink]="['/city',city.id]"> <!-- Para ver alertas, una prueba (click)="presentAlert2()""-->
+        <img src="../../assets/cities-img/{{city.image}}" />
+        <div id="card-title">{{city.name}}</div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

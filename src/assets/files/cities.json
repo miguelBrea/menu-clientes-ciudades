@@ -1,0 +1,21 @@
+{
+  "data":[
+    {
+      "id": 0,
+      "name": "Granada",
+      "image": "granada.jpg",
+      "description": "Granada ciudad junto a Sierra Nevada donde se encuentra un monumento nacional como es la La Alhambra, entre otros."
+    },
+    {
+      "id": 1,
+      "name": "Malaga",
+      "image": "malaga.jpg",
+      "description": "En pleno costa del sol se encuentra Malaga. Destacamos su cocina, sus monumentos..."
+    },
+    {
+      "id": 2,
+      "name": "Cadiz",
+      "image": "cadiz.jpg",
+      "description": "Ciudad mas antigua de europa, situada al sur de España. ..."
+    }]
+}
